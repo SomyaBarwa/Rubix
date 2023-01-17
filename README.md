@@ -1,0 +1,2 @@
+# Rubix
+CSI Rubix Hackathon
