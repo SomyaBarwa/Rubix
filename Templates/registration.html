@@ -1,228 +1,326 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Put a logo -->
+  <link href="/static/logo" rel="icon">
+  <title>Health Tracker: login</title>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <style>
-        * {
-  box-sizing: border-box;
+      body,
+      html {
+        height: 100%;
+        display: grid;
+        background-image: url("https://wallpapercave.com/wp/STgHPst.jpg");
+        overflow: hidden;
+        background-size: cover;
   
-}
-
-body, html {
-    height: 100%;
-    display: grid;
-    padding: 0px !important; 
-  }
+        /* Control the height of the image */
+        height: 720px;
+        width: 100%;
   
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
   
-
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
   
-  .bg-img {
-    /* The image used */
-    background-image: url("https://wallpapercave.com/wp/STgHPst.jpg");
+      .user-details .input input {
+        height: 55px;
+        width: 100%;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+      }
   
-    /* Contro1l the height of the image */
-    height: 100%;
-    width:  100%;
+      /* Add styles to the form container */
+      .container {
+        width: 35%;
+        position: relative;
+        height: 70%;
+        top: 10%;
+        background-color: rgba(228, 223, 216, 0.834);
+        padding: 10% 5%;
+        padding-top: 70px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      }
   
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  /*Address box style*/
-  .user-details .inp input{
-    height: 55px;
-    width: 223%;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-  }
-  /* Add styles to the form container */
-  .container{
-    width:60%;
-    position: relative;
-    height: 80%;
-    top:10%;
-    left:20%;
-    background-color: rgba(206, 232, 241, 0.534);
-    padding: 10% 10%;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  }
-  .container .title{
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
-  }
-  .container .title::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    border-radius: 5px;
-  }
-  .content form .user-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0 12px 0;
-  }
-  form .user-details .input-box{
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-  }
-  form .input-box span.details{
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  .user-details .input-box input{
-    height: 45px;
-    width: 100%;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid rgb(204, 204, 204);
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-  }
-  .user-details .input-box input:focus,
-  .user-details .input-box input:valid{
-    border-color: #7ee8fb;
-  }
-   form .category{
-     display: flex;
-     width: 80%;
-     margin: 14px 0 ;
-   }
-   form .category label{
-     display: flex;
-     cursor: pointer;
-   }
-   form .category label .dot{
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background: #d9d9d9;
-    border: 5px solid transparent;
-    transition: all 0.3s ease;
-  }
-   form input[type="radio"]{
-     display: none;
-   }
-   .button{
-     height: 45px;
-     margin: 35px 0
-   }
-   .button input{
-     height: 100%;
-     width: 100%;
-     border-radius: 5px;
-     border: none;
-     color: #fff;
-     font-size: 18px;
-     font-weight: 500;
-     letter-spacing: 1px;
-     cursor: pointer;
-     transition: all 0.3s ease;
-     background-color: #7ee6fb;
-  background-image: linear-gradient(62deg, #7ecbfb 0%, #68d8f7 100%);
-   
-   }
-   .button input:hover{
-    /* transform: scale(0.99); */
-    background-color: #7eeafb;
-  background-image: linear-gradient(250deg, #27f0e6 0%, #3ee7a6 100%);
-   
-    }
-   @media(max-width: 584px){
-   .container{
-    max-width: 100%;
-  }
-  form .user-details .input-box{
-      margin-bottom: 15px;
-      width: 100%;
-    }
-    form .category{
-      width: 100%;
-    }
-    .content form .user-details{
-      max-height: 300px;
-      overflow-y: scroll;
-    }
-    .user-details::-webkit-scrollbar{
-      width: 5px;
-    }
-    }
-    @media(max-width: 459px){
-    .container .content .category{
-      flex-direction: column;
-    }
-  }
+      .container .title {
+        font-size: 25px;
+        font-weight: 1000;
+        position: relative;
+      }
+  
+      .container .title::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        border-radius: 5px;
+      }
+  
+      .content form .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+        width: 210%;
+        font-family: Verdana;
+      }
+  
+      form .user-details .input-box {
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 20px);
+      }
+  
+      form .input-box span.details {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-family: Verdana
+      }
+  
+      .user-details .input-box input {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+      }
+  
+      .user .input-box input {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        padding-left: 15px;
+        border: 1px solid #ccc;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+      }
+  
+      .user-details .input-box {
+        display: block;
+      }
+  
+      .user-details .input-box input:focus,
+      .user-details .input-box input:valid {
+        border-color: #FBAB7E;
+      }
+  
+      form .gender-details .gender-title {
+        font-size: 20px;
+        font-weight: 500;
+      }
+  
+      form .category {
+        display: flex;
+        width: 80%;
+        margin: 14px 0;
+        justify-content: space-between;
+      }
+  
+      form .category label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+  
+      form .category label .dot {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        margin-right: 10px;
+        background: #d9d9d9;
+        border: 5px solid transparent;
+        transition: all 0.3s ease;
+      }
+  
+      #dot-1:checked~.category label .one,
+      #dot-2:checked~.category label .two,
+      #dot-3:checked~.category label .three {
+        background: #40d6d6;
+        border-color: #d9d9d9;
+      }
+  
+      form input[type="radio"] {
+        display: none;
+      }
+  
+      form .buttonn {
+        height: 45px;
+        margin: 35px 0
+      }
+  
+      .buttonn input {
+        height: 50px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: rgb(13, 147, 171);
+        margin-top: 30px;
+        /*background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); -->
+     */
+      }
+  
+      .but input {
+        margin-top: 13%;
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: black;
+        /*background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);*/
+  
+      }
+  
+      .buttonn input:hover {
+        /* transform: scale(0.99); */
+        background-color: #097021;
+        /*background-image: linear-gradient(250deg, #27f0e6 0%, #3ee7a6 100%);*/
+  
+      }
+  
+      .but input:hover {
+        /* transform: scale(0.99); */
+        background-color: #55d70fd8;
+        height: 30px;
+        /*background-image: linear-gradient(250deg, #f0ba27 0%, #e7983e 100%);*/
+  
+      }
+  
+      @media(max-width: 584px) {
+        .container {
+          max-width: 100%;
+        }
+  
+        form .user-details .input-box {
+          margin-bottom: 15px;
+          width: 100%;
+        }
+  
+        form .category {
+          width: 100%;
+        }
+  
+        .content form .user-details {
+          max-height: 300px;
+          overflow-y: scroll;
+        }
+  
+        .user-details::-webkit-scrollbar {
+          width: 5px;
+        }
+      }
+  
+      @media(max-width: 459px) {
+        .container .content .category {
+          flex-direction: column;
+        }
+      }
     </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration page</title>
 </head>
-<body> <!--color="#eda75d"-->
-    
-    <div class="bg-img">
-    
-        <div class="container">
-            <div class="title">Welcome to __, Please register here</div>
-            <div class="content">
-                <form action="#" >
-                    <div class="user-details">
-                      <div class="input-box">
-                        <span class="details">Username</span>
-                        <input type="text" placeholder="Enter your username" required name="fullname" id = "bc1">
-                      </div>
-                      <div class="input-box">
-                        <span class="details">Password</span>
-                        <input type="password" placeholder="Enter your password" required name="age"id = "bc2">
-                      </div>
-                      <div class="input-box">
-                        <span class="details">Re-type Password</span>
-                        <input type="password" placeholder="Enter your password again" required name="age" id = "bc3">
-                      </div>
-                      <div class="input-box">
-                        <span class="details">Mobile Number</span>
-                        <input type="number" placeholder="Enter your number" required name="number" id = "bc4">
-                      </div>
-                    </div>
-                  </form>
-                    <div class="button" id = "user-details">
-                      <input type="submit" value="Register" onClick="myFunction()">
-                    </div>
-                  
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><strong>Health Tracker</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mt-2">
+          <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="login1.html">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  </div>
+
+  <div class="container text-center" style="display:inline-block;">
+    <div class="title" onClick="location.href=''">
+      REGISTRATION
+    </div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required name="fullname" id="email1">
+          </div>
+        </div>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required name="age" id="pass1">
+          </div>
+        </div>
+        <div class="user-details">
+            <div class="input-box">
+              <span class="details">Re Enter Password</span>
+              <input type="password" placeholder="Re Enter your password" required name="age" id="pass2">
             </div>
           </div>
+      </form>
+      <div class="part">
+        <div class="buttonn">
+          <input type="submit" value="LOGIN" onclick="">
+        </div>
+        <div class="but">
+          <a href="registration.html">
+            <input type="submit" value="New user?Click here to Register" class="register-now">
+          </a>
+
+        </div>
       </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 
-<script>
-  function myFunction() {
-        //   var x = document.getElementById("bc1").value;
-        //   var y = document.getElementById("bc2").value;
-        //   var a = document.getElementById("bc3").value;
-        //   if (y!=a){
-        //     window.alert("Password and Repassword do not match");
-        //   }
-        //   else{
-        //     window.alert("Registration Successfull");
-        //   var z = "http://localhost:51234/users/createuserid/" + x + "/" + y + "/";
-        //   window.location = z;
-        //   }
-        }
-</script>
 </html>
