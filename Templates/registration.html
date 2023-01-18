@@ -257,7 +257,145 @@
           flex-direction: column;
         }
       }
-      .classname {  
+  /*Address box style*/
+  .user-details .inp input{
+    height: 55px;
+    width: 223%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  /* Add styles to the form container */
+  .containerr{
+    width:60%;
+    position: relative;
+    height: 80%;
+    top:10%;
+    left:20%;
+    background-color: rgba(206, 232, 241, 0.534);
+    padding: 10% 10%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  }
+  .containerr .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+  }
+  .containerr .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+  }
+  .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #7ee8fb;
+  }
+   form .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+   }
+   form .category label{
+     display: flex;
+     cursor: pointer;
+   }
+   form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   form input[type="radio"]{
+     display: none;
+   }
+   .button{
+     height: 45px;
+     margin: 35px 0
+   }
+   .button input{
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background-color: #7ee6fb;
+  background-image: linear-gradient(62deg, #7ecbfb 0%, #68d8f7 100%);
+   
+   }
+   .button input:hover{
+    /* transform: scale(0.99); */
+    background-color: #7eeafb;
+  background-image: linear-gradient(250deg, #27f0e6 0%, #3ee7a6 100%);
+   
+    }
+   @media(max-width: 584px){
+   .containerr{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .content form .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+      width: 5px;
+    }
+    }
+    @media(max-width: 459px){
+    .containerr .content .category{
+      flex-direction: column;
+    }
+  }
+  .classname {  
 position: fixed;  
 left: 10px;  
 bottom: 5px;  
@@ -289,7 +427,7 @@ text-align: center;
 
   <div class="container text-center" style="display:inline-block;">
     <div class="title" onClick="location.href=''">
-      LOGIN
+      REGISTRATION
     </div>
     <div class="content">
       <form action="#">
@@ -299,12 +437,18 @@ text-align: center;
             <input type="text" placeholder="Enter your username" required name="fullname" id="email1">
           </div>
         </div>
-        <div class="user">
+        <div class="user-details">
           <div class="input-box">
             <span class="details">Password</span>
             <input type="password" placeholder="Enter your password" required name="age" id="pass1">
           </div>
         </div>
+        <div class="user-details">
+            <div class="input-box">
+              <span class="details">Re Enter Password</span>
+              <input type="password" placeholder="Re Enter your password" required name="age" id="pass2">
+            </div>
+          </div>
       </form>
       <div class="part">
         <div class="buttonn">
