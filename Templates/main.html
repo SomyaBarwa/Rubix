@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="\Static\mainPage.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>project</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <nav>
-            <span>Activites</span>
-            <span>Discussion</span>
-            <span>Consultation</span>
-            <span>Contact</span>
-            <span>Logout</span>
-        </nav>
+      <nav id="navbar" class="bg-white border-gray-200 dark:bg-gray-800 h-16 p-3">
+        <span><button class="text-white hover:bg-gray-600/50 font-medium rounded-2xl text-2xl px-5 py-1 text-center">Activites</button></span>
+        <span><button class="text-white hover:bg-gray-600/50 font-medium rounded-2xl text-2xl px-5 py-1 text-center">Discussion</button></span>
+        <span><button class="text-white hover:bg-gray-600/50 font-medium rounded-2xl text-2xl px-5 py-1 text-center">Consultation</button></span>
+        <span><button class="text-white hover:bg-gray-600/50 font-medium rounded-2xl text-2xl px-5 py-1 text-center">Contact</button></span>
+        <span id="logout"><button class="text-white hover:bg-gray-600/50 font-medium rounded-2xl text-2xl px-5 py-1 text-center">Logout</button></span>
+      </nav>
     </div>
     
-</body>
+     <div id="image">
+        <img src="https://binaries.templates.cdn.office.net/support/templates/en-us/lt02897376_quantized.png" class="h-96 drop-shadow-lg filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="calender">
+    </div> 
+        <div id="card" class="h-40 p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <h2 class="text-white font-bold text-2xl">Track your performance</h2>
+    </div>
+    <!-- <div id="bar">
+        <img src="https://wcs.smartdraw.com/chart/img/vertical-bar-graph.png?bn=15100111860" class="h-80 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+    </div> -->
+    <!-- <div class="wrapper">
+        <div class="poll-area">
+          <input type="checkbox" name="poll" id="opt-1">
+          <label for="opt-1" class="opt-1">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text-white"></span>
+              </div>
+              <span class="text-white percent">0/5</span>
+            </div>
+            <div class="progress" style='--w:30;'></div>
+          </label>
+          
+        </div>
+      </div> -->
+
+    
+      <script src="\Static\mainPage.js"></script>
+  </body>
 </html>
