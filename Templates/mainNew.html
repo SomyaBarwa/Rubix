@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/static/mainNew.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     .container {
       padding: 2rem 0rem;
@@ -73,7 +74,7 @@
       class="h-96 drop-shadow-lg filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
       alt="calender">
   </div> -->
-  
+
   <div class="container">
     <div class="card rounded-4 p-3" style="width: 50rem; height:12rem;" id="card">
       <div class="card-body fs-3 fw-bold">
@@ -90,7 +91,7 @@
     </div>
   </div>
   </div>
-<!-- 
+  <!-- 
   <div class="container" id="table">
     <div class="row">
       <div class="col-12">
@@ -304,26 +305,31 @@
   <div id="graphics">
     <div class="card rounded-5 p-3" id="calender">
       <div id="calenderBtn">
-      <button type="button" class="btn btn-dark"><a href="test.html" style="font-size: 1.8rem; text-decoration: none;">Calender</a></button>
+        <button type="button" class="btn btn-dark"><a href="test.html"
+            style="font-size: 1.8rem; text-decoration: none;">Calender</a></button>
+      </div>
     </div>
-  </div>
-  <div class="card rounded-5 p-3" id="barGraph">
-    <div id="barGraphBtn">
-    <button type="button" class="btn btn-dark"><a href="" style="font-size: 1.8rem;text-decoration: none;">Bar Graph</a></button>
-  </div>
-</div>
-<div class="card rounded-5 p-3" id="data">
-  <div id="dataBtn">
-  <button type="button" class="btn btn-dark"><a href="index.html" style="font-size: 1.8rem;text-decoration: none;">Data</a></button>
-</div>
-</div>
+    <div class="card rounded-5 p-3" id="barGraph">
+      <div id="barGraphBtn">
+        <button type="button" class="btn btn-dark"><a href="" style="font-size: 1.8rem;text-decoration: none;">Bar
+            Graph</a></button>
+      </div>
+    </div>
+    <div class="card rounded-5 p-3" id="data">
+      <div id="dataBtn">
+        <button type="button" class="btn btn-dark"><a href="index.html"
+            style="font-size: 1.8rem;text-decoration: none;">Data</a></button>
+      </div>
+    </div>
   </div>
   <section>
     <h1 id="activites"> Activities</h1>
     <div>
       <img src="/static/images/activities1.png" alt="" id="activitiesImage">
     </div>
-    <div class="card m-5" style="width: 40rem; height:12rem; top:70rem;" id="check1">
+
+    <div class="card m-5 " style="width: 40rem; height:12rem; top:70rem;" id="check1" data-aos="fade-right"
+      data-aos-offset="400" data-aos-duration="1500" data-aos-easing="ease-in-sine">
       <div class="card-body " id="checkbox1">
         <div class="form-check">
           <input class="form-check-input fs-3 m-3 " type="checkbox" value="" id="Checkbox1" onclick="update()">
@@ -545,6 +551,10 @@
       window.close();
       window.location = "http://localhost:51234/add/1";
     }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 
