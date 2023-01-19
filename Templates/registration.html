@@ -416,8 +416,8 @@ text-align: center;
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto mt-2">
-          <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
-          <li class="nav-item"><a class="nav-link" href="login1.html">Sign In</a></li>
+          <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="/login">Sign In</a></li>
         </ul>
       </div>
     </div>
@@ -430,26 +430,25 @@ text-align: center;
       REGISTRATION
     </div>
     <div class="content">
-      <form action="#">
+      <form action="/register" method="POST">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required name="fullname" id="email1">
+            <input type="text" placeholder="Enter your username" autofocus name="username" id="email1" autocomplete="off">
           </div>
         </div>
         <div class="user-details">
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="password" placeholder="Enter your password" required name="age" id="pass1">
+            <input type="password" placeholder="Enter your password" name="password" id="pass1">
           </div>
         </div>
         <div class="user-details">
             <div class="input-box">
               <span class="details">Re Enter Password</span>
-              <input type="password" placeholder="Re Enter your password" required name="age" id="pass2">
+              <input type="password" placeholder="Re Enter your password" name="confirmation" id="pass2">
             </div>
           </div>
-      </form>
       <div class="part">
         <div class="buttonn">
           <input type="submit" value="LOGIN" onclick="">
@@ -461,6 +460,7 @@ text-align: center;
 
         </div>
       </div>
+    </form>
     </div>
   </div>
 
