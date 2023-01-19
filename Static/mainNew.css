@@ -6,11 +6,6 @@ body {
     background-color: #1f2937;
 }
 
-#image {
-    position: absolute;
-    left: 120vh;
-    top: 20%;
-}
 
 #list a {
     color: rgb(237, 226, 226);
@@ -41,17 +36,20 @@ body {
 
 #heading {
     position: absolute;
-    top: 200rem;
+    top: 180rem;
+    left:3rem;
 }
 
 #activites {
     position: absolute;
-    top: 73rem;
+    top: 65rem;
+    left:3rem;
 }
 
 #checkbox1 {
     padding: 4rem;
-    background-color: #b8bdab;
+    color: white;
+    background-color: #8c9083;
     border: 2rem;
     border-color: #b8bdab;
     border-radius: 3rem;
@@ -73,6 +71,157 @@ body {
     left: 25rem;
 }
 
+#img2 {
+    border-radius: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    top: -1rem;
+    left: -25rem;
+}
+
+#checkbox2 {
+    padding: 4rem;
+    color: white;
+    background-color: #8c9083;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#check2 {
+    background-color: #8c9083;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#check3 {
+    background-color: #b8bdab;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#img3 {
+    border-radius: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    top: -1rem;
+    left: 25rem;
+}
+
+#checkbox3 {
+    padding: 4rem;
+    background-color: #8c9083;
+    color: white;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#check5 {
+    background-color: #b8bdab;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#checkbox5 {
+    padding: 4rem;
+    background-color: #8c9083;
+    color: white;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#checkbox4 {
+    padding: 4rem;
+    background-color: #8c9083;
+    color: white;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#img4 {
+    border-radius: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    top: -1rem;
+    left: -19rem;
+}
+
+#check4 {
+    background-color: #8c9083;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#img5 {
+    border-radius: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    top: -1rem;
+    left: 25rem;
+}
+
+
+#table {
+    position: absolute;
+    width: 52rem;
+    top: 32rem;
+    left: 2rem;
+}
+
+#card {
+    position: absolute;
+    top: 17rem;
+}
+
+#calenderImage {
+    position: absolute;
+    top: 20rem;
+    left: 60rem;
+}
+
+#medInfo{
+    position: absolute;
+    top: 1.5rem;
+    left: 50rem;
+    width: 120%;
+}
+#exerciseInfo{
+    position: absolute;
+    top: 1rem;
+    width: 120%;
+    right:50rem;
+}
+#sleepInfo{
+    position: absolute;
+    top: 1.5rem;
+    left: 50rem;
+    width: 120%;
+
+}
+#balancedDietInfo{
+    position: absolute;
+    top: 1rem;
+    width: 120%;
+    right:50rem;
+}
+#hobbyInfo{
+    position: absolute;
+    top: 1.5rem;
+    left: 50rem;
+    width: 120%;
+
+}
 @media(max-width:762px) {
     #card {
         display: inline-block;
