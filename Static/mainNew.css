@@ -46,12 +46,12 @@ body {
 
 #activites {
     position: absolute;
-    top: 73rem;
+    top: 65rem;
 }
 
 #checkbox1 {
     padding: 4rem;
-    color:white;
+    color: white;
     background-color: #8c9083;
     border: 2rem;
     border-color: #b8bdab;
@@ -85,7 +85,7 @@ body {
 
 #checkbox2 {
     padding: 4rem;
-    color:white;
+    color: white;
     background-color: #8c9083;
     border: 2rem;
     border-color: #b8bdab;
@@ -98,13 +98,15 @@ body {
     border-color: #b8bdab;
     border-radius: 3rem;
 }
+
 #check3 {
     background-color: #b8bdab;
     border: 2rem;
     border-color: #b8bdab;
     border-radius: 3rem;
 }
-#img3{
+
+#img3 {
     border-radius: 50%;
     position: absolute;
     width: 20rem;
@@ -116,11 +118,12 @@ body {
 #checkbox3 {
     padding: 4rem;
     background-color: #8c9083;
-    color:white;
+    color: white;
     border: 2rem;
     border-color: #b8bdab;
     border-radius: 3rem;
 }
+
 #check5 {
     background-color: #b8bdab;
     border: 2rem;
@@ -131,19 +134,21 @@ body {
 #checkbox5 {
     padding: 4rem;
     background-color: #8c9083;
-    color:white;
+    color: white;
     border: 2rem;
     border-color: #b8bdab;
     border-radius: 3rem;
 }
+
 #checkbox4 {
     padding: 4rem;
     background-color: #8c9083;
-    color:white;
+    color: white;
     border: 2rem;
     border-color: #b8bdab;
     border-radius: 3rem;
 }
+
 #img4 {
     border-radius: 50%;
     position: absolute;
@@ -152,13 +157,15 @@ body {
     top: -1rem;
     left: -19rem;
 }
+
 #check4 {
     background-color: #8c9083;
     border: 2rem;
     border-color: #b8bdab;
     border-radius: 3rem;
 }
-#img5{
+
+#img5 {
     border-radius: 50%;
     position: absolute;
     width: 20rem;
@@ -171,8 +178,19 @@ body {
 #table {
     position: absolute;
     width: 52rem;
-    top: 27rem;
+    top: 40rem;
     left: 2rem;
+}
+
+#card {
+    position: absolute;
+    top: 23rem;
+}
+
+#calenderImage {
+    position: absolute;
+    top: 25rem;
+    left: 60rem;
 }
 
 @media(max-width:762px) {
