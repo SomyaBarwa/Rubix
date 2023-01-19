@@ -15,28 +15,31 @@ body {
     background-color: rgb(213, 207, 207);
     color: rgb(16, 9, 9);
 }
-#header{
-    position:absolute;
+
+#header {
+    position: absolute;
     background-color: #263243;
-    top:8rem;
-    height:8rem;
-    width:94%;
-    left:3rem;
-    color:white;
-    padding:40px;
+    top: 8rem;
+    height: 8rem;
+    width: 94%;
+    left: 3rem;
+    color: white;
+    padding: 40px;
     font-size: 30px;
 
 }
-#calender{
+
+#calender {
     position: absolute;
-    top:35rem;
-    left:80%;
+    top: 35rem;
+    left: 80%;
 }
+
 #card {
     background-color: #1f2937;
     color: white;
     position: absolute;
-    left:25rem; 
+    left: 28rem;
 }
 
 /* #Checkbox1 {
@@ -49,38 +52,39 @@ body {
 
 #consultCard {
     position: absolute;
-    top:195rem;
+    top: 195rem;
 }
 
 #consultation {
     position: absolute;
     top: 179rem;
-    left:33rem;
-    z-index:1;
-    font-style:bold;
+    left: 33rem;
+    z-index: 1;
+    font-style: bold;
     color: #f0f5f4;
     background-color: rgba(0, 0, 0, 0.4);
-    font-size:6rem;
+    font-size: 6rem;
 }
 
 #activites {
     position: absolute;
     top: 67rem;
-    left:41rem;
-    font-size:6rem;
+    left: 41rem;
+    font-size: 6rem;
     z-index: 1;
     color: #f0f5f4;
     background-color: rgba(0, 0, 0, 0.4);
-    font-style:bold;
+    font-style: bold;
 }
-#bg-contact{
-    
+
+#bg-contact {
+
     position: absolute;
     top: 210rem;
     height: 4rem;
-    width:100%;
-    right:10rem;
-    z-index: -1; 
+    width: 100%;
+    right: 10rem;
+    z-index: -1;
 }
 
 #checkbox1 {
@@ -91,47 +95,57 @@ body {
     border-color: #b8bdab;
     border-radius: 3rem;
 }
-#Checkbox1{
+
+#Checkbox1 {
     background-color: #a6c0e4;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
-#Checkbox2{
+}
+
+#Checkbox2 {
     background-color: #a6c0e4;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
- #Checkbox3{
+}
+
+#Checkbox3 {
     background-color: #a6c0e4;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
-#Checkbox4{
+}
+
+#Checkbox4 {
     background-color: #a6c0e4;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
- #Checkbox5{
+}
+
+#Checkbox5 {
     background-color: #a6c0e4;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
+}
 
 #check1 {
     background-color: #b8bdab;
     border: 2rem;
     border-color: #b8bdab;
     border-radius: 3rem;
+}
+
+#footerImage {
+    position: absolute;
+    top: 0rem;
 }
 
 #img1 {
@@ -262,78 +276,88 @@ body {
     left: 60rem;
 }
 
-#medInfo{
+#medInfo {
     position: absolute;
     top: 1.5rem;
     left: 50rem;
     width: 120%;
 }
-#exerciseInfo{
+
+#exerciseInfo {
     position: absolute;
     top: 1rem;
     width: 120%;
-    right:50rem;
+    right: 50rem;
 }
-#sleepInfo{
+
+#sleepInfo {
     position: absolute;
     top: 1.5rem;
     left: 50rem;
     width: 120%;
 
 }
-#balancedDietInfo{
+
+#balancedDietInfo {
     position: absolute;
     top: 1rem;
     width: 120%;
-    right:50rem;
+    right: 50rem;
 }
-#hobbyInfo{
+
+#hobbyInfo {
     position: absolute;
     top: 1.5rem;
     left: 50rem;
     width: 120%;
 
 }
-#activitiesImage{
+
+#activitiesImage {
     position: absolute;
-    top:63rem;
-    width:100%;
+    top: 63rem;
+    width: 100%;
     height: 15rem;
-     filter: blur(3px);
-  -webkit-filter: blur(3px); 
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
-#consultationImage{
+
+#consultationImage {
     position: absolute;
-    top:175rem;
-    width:100%;
+    top: 175rem;
+    width: 100%;
     height: 15rem;
-     filter: blur(3px);
-  -webkit-filter: blur(3px); 
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
-#contactUs{
-    position:absolute;
-    top:40rem;
-    left:15%;
-    color:white;
-    
+
+#contactUs {
+    position: absolute;
+    top: 40rem;
+    left: 15%;
+    color: white;
+
 }
-#feedback{
-    position:absolute;
-    top:35rem;
-    left:78%;
-    color:white;
-    width:30rem;
+
+#feedback {
+    position: absolute;
+    top: 35rem;
+    left: 78%;
+    color: white;
+    width: 30rem;
     font-size: 2rem;
 }
 
-.btn btn-light{
-    position:absolute;
-    top:42rem;
-    left:70%;
+.btn btn-light {
+    position: absolute;
+    top: 42rem;
+    left: 70%;
 }
-#exampleFormControlTextarea1{
-    height:10rem;
+
+#exampleFormControlTextarea1 {
+    height: 10rem;
 }
+
 @media(max-width:762px) {
     #card {
         display: inline-block;
