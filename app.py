@@ -35,7 +35,7 @@ def after_request(response):
 @app.route("/")
 @login_required
 def index():
-    return render_template("mainNew1.html")
+    return render_template("mainNew.html")
 
 @app.route("/welcome")
 def welcome():
