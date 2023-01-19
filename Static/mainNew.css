@@ -39,6 +39,39 @@ body {
     top: 2000px;
 }
 
+#heading {
+    position: absolute;
+    top: 200rem;
+}
+
+#activites {
+    position: absolute;
+    top: 73rem;
+}
+
+#checkbox1 {
+    padding: 4rem;
+    background-color: #b8bdab;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#check1 {
+    background-color: #b8bdab;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#img1 {
+    border-radius: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    top: -1rem;
+    left: 25rem;
+}
 
 @media(max-width:762px) {
     #card {
