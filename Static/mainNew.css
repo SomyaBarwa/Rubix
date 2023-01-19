@@ -6,11 +6,6 @@ body {
     background-color: #1f2937;
 }
 
-#image {
-    position: absolute;
-    left: 120vh;
-    top: 20%;
-}
 
 #list a {
     color: rgb(237, 226, 226);
@@ -41,12 +36,14 @@ body {
 
 #heading {
     position: absolute;
-    top: 200rem;
+    top: 180rem;
+    left:3rem;
 }
 
 #activites {
     position: absolute;
     top: 65rem;
+    left:3rem;
 }
 
 #checkbox1 {
@@ -178,21 +175,53 @@ body {
 #table {
     position: absolute;
     width: 52rem;
-    top: 40rem;
+    top: 32rem;
     left: 2rem;
 }
 
 #card {
     position: absolute;
-    top: 23rem;
+    top: 17rem;
 }
 
 #calenderImage {
     position: absolute;
-    top: 25rem;
+    top: 20rem;
     left: 60rem;
 }
 
+#medInfo{
+    position: absolute;
+    top: 1.5rem;
+    left: 50rem;
+    width: 120%;
+}
+#exerciseInfo{
+    position: absolute;
+    top: 1rem;
+    width: 120%;
+    right:50rem;
+}
+#sleepInfo{
+    position: absolute;
+    top: 1.5rem;
+    left: 50rem;
+    width: 120%;
+
+}
+#balancedDietInfo{
+    position: absolute;
+    top: 1rem;
+    width: 120%;
+    right:50rem;
+}
+#hobbyInfo{
+    position: absolute;
+    top: 1.5rem;
+    left: 50rem;
+    width: 120%;
+
+}
 @media(max-width:762px) {
     #card {
         display: inline-block;

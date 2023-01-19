@@ -29,179 +29,6 @@
     background-color: #eff6e0;
 }
 
-.container-fluid {
-    background-color: #1f2937;
-}
-
-#image {
-    position: absolute;
-    left: 120vh;
-    top: 20%;
-}
-
-#list a {
-    color: rgb(237, 226, 226);
-}
-
-#list a:hover {
-    background-color: rgb(213, 207, 207);
-    color: rgb(16, 9, 9);
-}
-
-#card {
-    background-color: #1f2937;
-    color: white;
-    left: 10;
-}
-
-/* #Checkbox1 {
-    left: 50;
-} */
-
-.progress-bar {
-    width: 0%;
-}
-
-#consultCard {
-    top: 2000px;
-}
-
-#heading {
-    position: absolute;
-    top: 200rem;
-}
-
-#activites {
-    position: absolute;
-    top: 73rem;
-}
-
-#checkbox1 {
-    padding: 4rem;
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-
-#check1 {
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-
-#img1 {
-    border-radius: 50%;
-    position: absolute;
-    width: 20rem;
-    height: 15rem;
-    top: -1rem;
-    left: 25rem;
-}
-
-#img2 {
-    border-radius: 50%;
-    position: absolute;
-    width: 20rem;
-    height: 15rem;
-    top: -1rem;
-    left: -25rem;
-}
-
-#checkbox2 {
-    padding: 4rem;
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-
-#check2 {
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-#check3 {
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-#img3{
-    border-radius: 50%;
-    position: absolute;
-    width: 20rem;
-    height: 15rem;
-    top: -1rem;
-    left: 25rem;
-}
-
-#checkbox3 {
-    padding: 4rem;
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-#check5 {
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-
-#checkbox5 {
-    padding: 4rem;
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-#checkbox4 {
-    padding: 4rem;
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-#img4{
-    border-radius: 50%;
-    position: absolute;
-    width: 20rem;
-    height: 15rem;
-    top: -1rem;
-    left: -25rem;
-}
-#check4 {
-    background-color: #b8bdab;
-    border: 2rem;
-    border-color: #b8bdab;
-    border-radius: 3rem;
-}
-#img5{
-    border-radius: 50%;
-    position: absolute;
-    width: 20rem;
-    height: 15rem;
-    top: -1rem;
-    left: 25rem;
-}
-
-
-#table {
-    position: absolute;
-    width: 52rem;
-    top: 27rem;
-    left: 2rem;
-}
-
-@media(max-width:762px) {
-    #card {
-        display: inline-block;
-    }
-}
   </style>
   <title>Document</title>
 </head>
@@ -469,7 +296,7 @@
     </div>
   </div>
   <section>
-    <h1 id="activites"> Activites</h1>
+    <h1 id="activites"> Activities</h1>
     <div class="card m-5" style="width: 40rem; height:12rem; top:70rem;" id="check1">
       <div class="card-body " id="checkbox1">
         <div class="form-check">
@@ -481,7 +308,11 @@
             src="https://img.freepik.com/free-vector/organic-flat-people-meditating-illustration_23-2148906556.jpg?w=2000"
             id="img1">
         </div>
+        
       </div>
+      <p class="fs-5" id="medInfo">
+        Meditation is a powerful tool for spiritual growth, and is essentially a process to take one beyond the limitations of body and mind. Teachers and practitioners of these “inner technologies” have also experienced the many physical and mental benefits of meditation and Yoga. 
+      </p>
     </div>
     <div class="card m-5 position-absolute end-0 " style="width: 40rem; height:12rem; top:95rem;" id="check2">
       <div class="card-body position-absolute end-0" id="checkbox2">
@@ -494,8 +325,11 @@
             id="img2">
         </div>
       </div>
+      <p class="fs-5" id="exerciseInfo">
+        Exercise is a body activity that enhances or maintains physical fitness and overall health and wellness. You can perform exercises like jogging, walking, playing outdoor games, swimming, cycling,etc.
+      </p>
     </div>
-    <div class="card m-5" style="width: 40rem; height:12rem; top:90rem;" id="check3">
+    <div class="card m-5" style="width: 40rem; height:12rem; top:87rem;" id="check3">
       <div class="card-body" id="checkbox3">
         <div class="form-check">
           <input class="form-check-input fs-3 m-3" type="checkbox" value="" id="Checkbox3" onclick="update()">
@@ -505,6 +339,10 @@
           <img src="/images/Sleep.png" id="img3">
         </div>
       </div>
+      <p class="fs-5" id="sleepInfo">
+      Sleep is essential to our health
+      It strongly influences our capacity to recover both mentally and physically, allows us to store memories, influences our mood, and promotes "growing" in children. It basically impacts every aspect of our life by affecting the way we think, learn, behave, feel, and interact with others. Usually, 7-8 hrs of sleep is recommended by doctors.
+    </p>
     </div>
     <div class="card m-5 position-absolute end-0 " style="width: 40rem; height:12rem; top:133rem;" id="check4">
       <div class="card-body position-absolute end-0" id="checkbox4">
@@ -518,6 +356,14 @@
             id="img4">
         </div>
       </div>
+      <p class="fs-5" id="balancedDietInfo">
+        A healthy diet is essential for good health and nutrition.A healthy diet comprises a combination of different foods. These include:
+         Staples like cereals (wheat, barley, rye, maize or rice) or starchy tubers or roots (potato, yam, taro or cassava).
+         Legumes (lentils and beans).
+         Fruit and vegetables.
+        Foods from animal sources (meat, fish, eggs and milk).
+      
+      </p>
     </div>
     <div class="card m-5" style="width: 40rem; height:12rem; top:115rem;" id="check5">
       <div class="card-body " id="checkbox5">
@@ -530,6 +376,9 @@
             id="img5">
         </div>
       </div>
+      <p class="fs-5" id="hobbyInfo">
+        A hobby is also called a pastime, derived from the use of hobbies to pass the time. A hobby became an activity that is practiced regularly and usually with some worthwhile purpose. Hobbies are usually, but not always, practiced primarily for interest and enjoyment, rather than financial reward. Some of which include singing dancing painting exploring various advnetures photography.
+      </p>
     </div>
     </div>
   </section>
