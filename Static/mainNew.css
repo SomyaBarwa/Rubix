@@ -27,11 +27,16 @@ body {
     font-size: 30px;
 
 }
-
+#calender{
+    position: absolute;
+    top:35rem;
+    left:80%;
+}
 #card {
     background-color: #1f2937;
     color: white;
-    left: 10;
+    position: absolute;
+    left:25rem; 
 }
 
 /* #Checkbox1 {
@@ -314,7 +319,7 @@ body {
 }
 #feedback{
     position:absolute;
-    top:39rem;
+    top:35rem;
     left:78%;
     color:white;
     width:30rem;
@@ -327,7 +332,7 @@ body {
     left:70%;
 }
 #exampleFormControlTextarea1{
-    height:12rem;
+    height:10rem;
 }
 @media(max-width:762px) {
     #card {

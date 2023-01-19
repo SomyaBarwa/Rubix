@@ -65,16 +65,19 @@
       </div>
   </div>
   </nav>
-  <div id="header">
+  <!-- <div id="header">
       <p>Hope you have a wonderful and peaceful day!!!</p>
-  </div>
-  <div id="calenderImage">
+  </div> -->
+  <!-- <div id="calenderImage">
     <img src="https://binaries.templates.cdn.office.net/support/templates/en-us/lt02897376_quantized.png"
       class="h-96 drop-shadow-lg filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
       alt="calender">
+  </div> -->
+  <div id="calender">
+    <button type="button" class="btn btn-dark" style="width:6rem"><a href="test.html">Calender</a></button>
   </div>
   <div class="container">
-    <div class="card rounded-4 p-3 m-5 position-absolute start-0" style="width: 50rem; height:12rem;" id="card">
+    <div class="card rounded-4 p-4 m-5 " style="width: 50rem; height:12rem;" id="card">
       <div class="card-body fs-3 fw-bold">
         Track your performance
       </div>
@@ -481,6 +484,10 @@
       </p>
     </div>
     <div class="mb-3" id="feedback">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
       <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write your feedback here..."></textarea>
     <button type="button" class="btn btn-light" style="width:6rem">Submit</button>
