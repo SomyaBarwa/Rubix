@@ -56,6 +56,15 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     font-style:bold;
 }
+#bg-contact{
+    
+    position: absolute;
+    top: 210rem;
+    height: 4rem;
+    width:100%;
+    right:10rem;
+    z-index: -1; 
+}
 
 #checkbox1 {
     padding: 4rem;
@@ -283,6 +292,30 @@ body {
     height: 15rem;
      filter: blur(3px);
   -webkit-filter: blur(3px); 
+}
+#contactUs{
+    position:absolute;
+    top:40rem;
+    left:15%;
+    color:white;
+    
+}
+#feedback{
+    position:absolute;
+    top:39rem;
+    left:78%;
+    color:white;
+    width:30rem;
+    font-size: 2rem;
+}
+
+.btn btn-light{
+    position:absolute;
+    top:42rem;
+    left:70%;
+}
+#exampleFormControlTextarea1{
+    height:12rem;
 }
 @media(max-width:762px) {
     #card {
