@@ -81,6 +81,13 @@ body {
     border-radius: 3rem;
 }
 
+#table {
+    position: absolute;
+    width: 52rem;
+    top: 27rem;
+    left: 2rem;
+}
+
 @media(max-width:762px) {
     #card {
         display: inline-block;
