@@ -73,8 +73,24 @@ body {
     left: 25rem;
 }
 
+#img2 {
+    border-radius: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+    top: -1rem;
+    left: -25rem;
+}
+
 #checkbox2 {
-    padding: 2rem;
+    padding: 4rem;
+    background-color: #b8bdab;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
+#check2 {
     background-color: #b8bdab;
     border: 2rem;
     border-color: #b8bdab;
