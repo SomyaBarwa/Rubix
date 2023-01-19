@@ -31,19 +31,30 @@ body {
 }
 
 #consultCard {
-    top: 2000px;
+    position: absolute;
+    top:195rem;
 }
 
-#heading {
+#consultation {
     position: absolute;
-    top: 180rem;
-    left:3rem;
+    top: 179rem;
+    left:33rem;
+    z-index:1;
+    font-style:bold;
+    color: #f0f5f4;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size:6rem;
 }
 
 #activites {
     position: absolute;
-    top: 65rem;
-    left:3rem;
+    top: 67rem;
+    left:41rem;
+    font-size:6rem;
+    z-index: 1;
+    color: #f0f5f4;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-style:bold;
 }
 
 #checkbox1 {
@@ -54,6 +65,41 @@ body {
     border-color: #b8bdab;
     border-radius: 3rem;
 }
+#Checkbox1{
+    background-color: #a6c0e4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+#Checkbox2{
+    background-color: #a6c0e4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+ #Checkbox3{
+    background-color: #a6c0e4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+#Checkbox4{
+    background-color: #a6c0e4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+ #Checkbox5{
+    background-color: #a6c0e4;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
 
 #check1 {
     background-color: #b8bdab;
@@ -221,6 +267,22 @@ body {
     left: 50rem;
     width: 120%;
 
+}
+#activitiesImage{
+    position: absolute;
+    top:63rem;
+    width:100%;
+    height: 15rem;
+     filter: blur(3px);
+  -webkit-filter: blur(3px); 
+}
+#consultationImage{
+    position: absolute;
+    top:175rem;
+    width:100%;
+    height: 15rem;
+     filter: blur(3px);
+  -webkit-filter: blur(3px); 
 }
 @media(max-width:762px) {
     #card {
