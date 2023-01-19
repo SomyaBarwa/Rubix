@@ -73,6 +73,14 @@ body {
     left: 25rem;
 }
 
+#checkbox2 {
+    padding: 2rem;
+    background-color: #b8bdab;
+    border: 2rem;
+    border-color: #b8bdab;
+    border-radius: 3rem;
+}
+
 @media(max-width:762px) {
     #card {
         display: inline-block;
