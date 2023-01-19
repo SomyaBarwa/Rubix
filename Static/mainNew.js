@@ -5,6 +5,11 @@ const checkBox2=document.querySelector('#Checkbox2')
 const checkBox3=document.querySelector('#Checkbox3')
 const checkBox4=document.querySelector('#Checkbox4')
 const checkBox5=document.querySelector('#Checkbox5')
+let alert1=false;
+let alert2=false;
+let alert3=false;
+let alert4=false;
+let alert5=false;
 
 const progress=document.querySelector('#progress')
 const score=document.querySelector('#userActivity')
@@ -45,8 +50,11 @@ if (checkBox5.checked == true)
     w+=20;
 }
 
-if(s==1)
+if(s==1 && alert1==false)
+{
   alert("Heyy you made the first move. Way to go:)");
+  alert1=true;
+}
 if(s==2 || s==3)
   alert("Doing Well!!!");
 if(s==4)
