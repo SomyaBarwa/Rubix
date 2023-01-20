@@ -31,49 +31,54 @@ body {
 #calender {
     position: absolute;
     top: 30rem;
-    height:15rem;
-    width:20rem;
+    height: 15rem;
+    width: 20rem;
     left: 15%;
     background-image: url(/Static/images/calender.png);
     background-size: cover;
     background-position: -1rem;
 }
 
-#calenderBtn{
-  position: absolute;
-  top:16rem;
-  left:5.6rem;
+#calenderBtn {
+    position: absolute;
+    top: 16rem;
+    left: 5.6rem;
 }
+
 #barGraph {
     position: absolute;
     top: 30rem;
-    height:15rem;
-    width:20rem;
+    height: 15rem;
+    width: 20rem;
     left: 41%;
     background-image: url(/Static/images/bar.jpeg);
     background-size: cover;
     background-position: 0rem;
 }
-#barGraphBtn{
-  position: absolute;
-  top:16rem;
-  left:5.3rem;
+
+#barGraphBtn {
+    position: absolute;
+    top: 16rem;
+    left: 5.3rem;
 }
+
 #data {
     position: absolute;
     top: 30rem;
-    height:15rem;
-    width:20rem;
+    height: 15rem;
+    width: 20rem;
     left: 67%;
     background-image: url(/Static/images/data.jpeg);
     background-size: cover;
     background-position: -1rem;
 }
-#dataBtn{
-  position: absolute;
-  top:16rem;
-  left:7.5rem;
+
+#dataBtn {
+    position: absolute;
+    top: 16rem;
+    left: 7.5rem;
 }
+
 #card {
     background-color: #1f2937;
     color: white;
@@ -88,7 +93,7 @@ body {
 #consultCard {
     position: absolute;
     top: 195rem;
-
+  
 }
 
 #consultation {
@@ -183,7 +188,7 @@ body {
     position: absolute;
     top: 0rem;
     width: 100%;
-    left:10rem;
+    left: 10rem;
 }
 
 #img1 {
@@ -395,13 +400,12 @@ body {
 #exampleFormControlTextarea1 {
     height: 10rem;
 }
-#Shruti{
-    border-color:black;
-}
-#Shruti:hover{
 
-
+#Shruti {
+    border-color: black;
 }
+
+#Shruti:hover {}
 
 @media(max-width:762px) {
     #card {
