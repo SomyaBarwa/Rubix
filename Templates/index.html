@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Document</title>
-    <link rel="stylesheet" href="/Static/dycalendar.css">
-    <link rel="stylesheet" href="/Static/styles.css">
+    <link rel="stylesheet" href="/static/dycalendar.css">
+    <link rel="stylesheet" href="/static/styles.css">
     <style>
       body,
       html {
@@ -47,31 +47,14 @@
 <body style="background: #eff6e0;">
   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top pt-1 pb-1" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/Static/images/logo.png" alt="Logo" width="100" height="90" class="d-inline-block align-text-top">
+      <a class="navbar-brand" href="mainNew.html">
+        <img src="/static/images/logo.png" alt="Logo" width="100" height="90" class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item fs-3 m-2 fw-bold" id="list">
-            <a class="nav-link" href="#activitiesImage">Activities</a>
-          </li>
-          <li class="nav-item fs-3 m-2 fw-bold" id="list">
-            <a class="nav-link" href="#consultationImage">Consultation</a>
-          </li>
-          <li class="nav-item fs-3 m-2 fw-bold" id="list">
-            <a class="nav-link" onclick="myFunction()">Discussion</a>
-          </li>
-          <li class="nav-item fs-3 m-2 fw-bold" id="list">
-            <a class="nav-link" href="#feedback">Contact</a>
-          </li>
-          <li class="nav-item position-absolute end-0 fs-3 m-2 fw-bold" id="list">
-            <a class="nav-link" href="/logout" id="logout">Logout</a>
-          </li>
-        </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent";
       </div>
     </div>
 </div>
@@ -270,7 +253,7 @@
     </div>
   </div> 
 
-  <script src="/Static/dycalendar.js"></script>
+  <script src="/static/dycalendar.js"></script>
   <script>
       dycalendar.draw({
           target: '#dycalendar',
