@@ -55,15 +55,50 @@ if(checkBox5.checked != true && checkBox4.checked != true && checkBox3.checked !
   w=0;
   updateValue(s,w);
 }
+var p = "";
 if(s==1)
 {
-  alert("Heyy you made the first move. Way to go:)");
+  p = "Heyy you made the first move. Way to go:)";
 }
 if(s==2 || s==3)
-  alert("Doing Well!!!");
+  p = "Doing Well!!!";
 if(s==4)
-  alert("Close enough.. You can do it!!");
+p = "Close enough.. You can do it!!";
 if(s==5)
-  alert("You made it!!");
+p = "You made it!!";
+if (s > 0){
+  let x = Math.floor((Math.random() * 10) + 1);
+  if (x==1){
+    p += "\n" + "Genius is one percent inspiration and ninety-nine percent perspiration.";
+  }
+  if (x==2){
+    p += "\n" + "Difficulties increase the nearer we get to the goal.";
+  }
+  if (x==3){
+    p += "\n" + "Well begun is half done.";
+  }
+  if (x==4){
+    p += "\n" + "To lead people walk behind them.";
+  }
+  if (x==5){
+    p += "\n" + "Having nothing, nothing can he lose.";
+  }
+  if (x==6){
+    p += "\n" + "Bite off more than you can chew, then chew it.";
+  }
+  if (x==7){
+    p += "\n" + "Once you choose hope, anythings possible.";
+  }
+  if (x==8){
+    p += "\n" + "Don't wait. The time will never be just right.";
+  }
+  if (x==9){
+    p += "\n" + "Without courage, wisdom bears no fruit.";
+  }
+  if (x==10){
+    p += "\n" + "Every new day is another chance to change your life.";
+  }
+  alert(p);
 
+}
 }
