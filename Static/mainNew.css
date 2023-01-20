@@ -60,12 +60,12 @@ body {
     background-size: cover;
     background-position: -1rem;
 
-
+*/
 #data {
     position: absolute;
-    top: 30rem;
-    height: 15rem;
-    width: 20rem;
+    top: 25rem;
+    height: 20rem;
+    width: 29rem;
     left: 67%;
     background-image: url(/Static/images/data.jpeg);
     background-size: cover;
@@ -73,9 +73,9 @@ body {
 }
 #dataBtn{
   position: absolute;
-  top:16rem;
-  left:7.5rem;
-} */
+  top:20rem;
+  left:12rem;
+} 
 
 
 .progress-bar {
@@ -391,19 +391,7 @@ body {
 #exampleFormControlTextarea1 {
     height: 10rem;
 }
-
-<<<<<<< HEAD #Shruti {
-    border-color: black;
-}
-
-
-=======#Shruti {
-    border-color: black;
-}
-
-#Shruti:hover {}
-
->>>>>>>1a735fd55feb3f0503ad3bbb9b81d1138655420c @media(max-width:762px) {
+ @media(max-width:762px) {
     #card {
         display: inline-block;
     }
