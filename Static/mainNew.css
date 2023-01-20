@@ -67,7 +67,7 @@ body {
     height: 20rem;
     width: 29rem;
     left: 67%;
-    background-image: url(/Static/images/data.jpeg);
+    background-image: url(/static/images/data.jpeg);
     background-size: cover;
     background-position: -1rem;
 }
