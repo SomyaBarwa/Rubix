@@ -21,7 +21,7 @@ section {
   z-index: 1000;
 }
 
-.container {
+.contain {
   position: relative;
   width: 400px;
   min-height: 400px;
