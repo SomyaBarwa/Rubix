@@ -25,6 +25,126 @@
 vertical-align: middle;
 }
 
+
+
+/* 
+section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	clip-path: circle(30% at right 70%);
+}
+
+section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	clip-path: circle(20% at 10% 10%);
+} */
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.container .card {
+	position: relative;
+	width: 500px;
+	height: 600px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 10px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+  background-color: #034078;
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+	position: relative;
+	width: 190px;
+	height: 290px;
+	overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+	color: rgb(226, 214, 214);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .card .card-text {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+
+.container .card .card-text li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .card:hover .card-text li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .card-text li a {
+	color: rgb(235, 230, 230);
+	font-size: 20px;
+}
+
     </style>
 </head>
 <body>
@@ -238,6 +358,68 @@ vertical-align: middle;
           </div>
         </div>
       </div> 
+      <section>
+        <div class="container">
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="https://listing-photo-test.s3.ap-south-1.amazonaws.com/-MctB9xLX0mPGWoJxEu3.jpeg">
+              </div>
+              <div class="contentBx">
+                <h3>Ms Shruti Chandran<br></h3>
+              </div>
+            </div>
+            
+              <p class="card-text">Shruti Chandran is a professionally trained Counselling Psychologist with a Distinction
+                in MSc Psychology (Counselling Specialization). She has undergone 7 years of training in the theoretical,
+                practical and research-based approaches in Psychology. She has experience of over 500 counselling sessions
+                with clients from the ages of 5 years to 40 years.</p>
+            
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="https://image.flaticon.com/icons/png/256/4213/4213736.png">
+              </div>
+              <div class="contentBx">
+                <h3>Frog<br><span>Happy Birthday</span></h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <li>
+                <a href="">happy</a>
+              </li>
+              <li>
+                <a href="">birth</a>
+              </li>
+              <li>
+                <a href="">day</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="imgBx">
+                <img src="https://image.flaticon.com/icons/png/256/4213/4213641.png">
+              </div>
+              <div class="contentBx">
+                <h3>Giraffe<br><span>Happy Birthday</span></h3>
+              </div>
+            </div>
+            <ul class="sci">
+              <li>
+                <a href="">happy</a>
+              </li>
+              <li>
+                <a href="">birth</a>
+              </li>
+              <li>
+                <a href="">day</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></body>

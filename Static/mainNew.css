@@ -18,16 +18,15 @@ body {
 
 #header {
     position: absolute;
-    background-color: #263243;
-    top: 8rem;
+    top: 5rem;
     height: 8rem;
     width: 94%;
-    left: 3rem;
-    color: white;
-    padding: 40px;
+    left: 1rem;
+    color: rgb(22, 21, 21);
+    padding: 15px;
     font-size: 30px;
-
 }
+
 
 #calender {
     position: absolute;
@@ -89,6 +88,7 @@ body {
 #consultCard {
     position: absolute;
     top: 195rem;
+
 }
 
 #consultation {
@@ -394,6 +394,13 @@ body {
 
 #exampleFormControlTextarea1 {
     height: 10rem;
+}
+#Shruti{
+    border-color:black;
+}
+#Shruti:hover{
+
+
 }
 
 @media(max-width:762px) {

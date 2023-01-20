@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/static/favicon.ico" rel="icon">
+  <title>Health Tracker</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/static/mainNew.css">
@@ -39,7 +41,9 @@
   <div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top pt-1 pb-1" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="fs-3 navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">
+          <img src="/Static/images/logo.png" alt="Logo" width="100" height="90" class="d-inline-block align-text-top">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -66,9 +70,14 @@
       </div>
   </div>
   </nav>
-  <!-- <div id="header">
-      <p>Hope you have a wonderful and peaceful day!!!</p>
-  </div> -->
+   <div id="header">
+      <h1 style="font-size:8rem">Welcome!!!</h1>
+      <p id="headerText">
+        <span style="position: absolute; left: 42rem;top:2.5rem">Track your mental health.</span>
+        <br><span style="position: absolute; left:42rem;top:4.4rem">Perform activites and stay motivated.</span>
+        <br><span style="position: absolute; left:42rem;top:6.4rem">Get in touch with our expert doctors for any assitance.</span> 
+      </p>
+  </div> 
   <!-- <div id="calenderImage">
     <img src="https://binaries.templates.cdn.office.net/support/templates/en-us/lt02897376_quantized.png"
       class="h-96 drop-shadow-lg filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
@@ -226,9 +235,9 @@
     <div>
       <img src="/static/images/consultation1.png" alt="" id="consultationImage">
     </div>
-    <div class="row row-cols-1 row-cols-md-3 g-5 m-5 p-5">
-      <div class="col">
-        <div class="card" style="height:10rem; width:23rem;" id="consultCard">
+     <div class="row row-cols-1 row-cols-md-3 g-5 m-5 p-5">
+      <div class="col" id="Shruti">
+        <div class="card" style="height:10rem; width:23rem;" id="consultCard" >
           <img src="https://listing-photo-test.s3.ap-south-1.amazonaws.com/-MctB9xLX0mPGWoJxEu3.jpeg"
             class="card-img-top" style=" height:18rem; width:23rem;" alt="...">
           <div class="card-body">
@@ -245,7 +254,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col" id="card2">
         <div class="card" style="height:10rem; width:24rem;" id="consultCard">
           <img src="https://listing-photo-test.s3.ap-south-1.amazonaws.com/-MQRqDPsQhiTV56aiKXD.jpeg"
             class="card-img-top" style=" height:18rem; width:24rem;" alt="...">
@@ -264,7 +273,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col" id="card3">
         <div class="card" style="height:10rem; width:23rem;" id="consultCard">
           <img src="https://listing-photo-test.s3.amazonaws.com/-N0U9ZRLwxvLjpdEcIMM.jpeg " class="card-img-top"
             style="height:18rem; width:23rem;" alt="...">
@@ -325,7 +334,7 @@
         <textarea class="form-control" id="exampleFormControlTextarea1"
           placeholder="Write your feedback here..."></textarea>
         <button type="button" class="btn btn-light" style="width:6rem">Submit</button>
-      </div>
+      </div> -->
 
   </section>
 
