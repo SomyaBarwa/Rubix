@@ -62,8 +62,8 @@ if(s==1)
 if(s==2 || s==3)
   alert("Doing Well!!!");
 if(s==4)
-  alert("Close enough.. You can do it!!")
+  alert("Close enough.. You can do it!!");
 if(s==5)
-  alert("You made it!!")
+  alert("You made it!!");
 
 }
