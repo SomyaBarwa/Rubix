@@ -16,15 +16,16 @@ public class ItsShowTime {
 		BufferedWriter b = null;
 		PrintWriter p = null;
 		try {
-			f = new FileWriter("C:/Users/Dhrumil/OneDrive/Desktop/Rubix23-35-NotDevelopers/Templates/discussion.html",false);
+			f = new FileWriter(
+					"C:/Users/Dhrumil/OneDrive/Desktop/Rubix23-35-NotDevelopers/Rubix23-35-NotDevelopers/Templates/discussion.html",
+					false);
 			b = new BufferedWriter(f);
 			p = new PrintWriter(b);
 			p.println(makehtml());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			try {
 				p.close();
 				b.close();
@@ -35,7 +36,7 @@ public class ItsShowTime {
 			}
 		}
 		Runtime rTime = Runtime.getRuntime();
-		String url = "C:/Users/Dhrumil/OneDrive/Desktop/Rubix23-35-NotDevelopers/Templates/discussion.html";
+		String url = "C:/Users/Dhrumil/OneDrive/Desktop/Rubix23-35-NotDevelopers/Rubix23-35-NotDevelopers/Templates/discussion.html";
 		String browser = "C:/Program Files/Google/Chrome/Application/chrome.exe ";
 		Process pc;
 		try {
@@ -47,8 +48,9 @@ public class ItsShowTime {
 			e.printStackTrace();
 		}
 	}
+
 	public static String makehtml() {
-		String html="";
+		String html = "";
 		html = "<html><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n"
 				+ "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n"
 				+ "  <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css\">"
@@ -61,8 +63,8 @@ public class ItsShowTime {
 				+ "}\r\n"
 				+ "\r\n"
 				+ ".text {\r\n"
-						+ "    text-align: center;\r\n"
-						+ "}\r\n"
+				+ "    text-align: center;\r\n"
+				+ "}\r\n"
 				+ "#image {\r\n"
 				+ "    position: absolute;\r\n"
 				+ "    left: 120vh;\r\n"
@@ -141,13 +143,13 @@ public class ItsShowTime {
 				+ "        width: 10%;\r\n"
 				+ "        position: relative;\r\n"
 				+ "      }\r\n"
-				+ "  \r\n"+ 
+				+ "  \r\n" +
 				"      .user .input-box input {\r\n"
 				+ "        height: 40px;\r\n"
 				+ "        align:center;\r\n"
 				+ "        width: 300px;\r\n"
 				+ "        position: relative;\r\n"
-				+"outline: none;\r\n"
+				+ "outline: none;\r\n"
 				+ "        font-size: 16px;\r\n"
 				+ "        border-radius: 5px;\r\n"
 				+ "        padding-left: 15px;\r\n"
@@ -162,8 +164,8 @@ public class ItsShowTime {
 				+ ".buttonn input {\r\n"
 				+ "        height: 50px;\r\n"
 				+ "        width: 200px;\r\n"
-				+"background-color: white;\r\n"
-				+"cursor:pointer;\r\n"
+				+ "background-color: white;\r\n"
+				+ "cursor:pointer;\r\n"
 				+ "        border-radius: 5px;\r\n"
 				+ "        padding-left: 15px;\r\n"
 				+ "        border: 1px solid #ccc;\r\n"
@@ -176,8 +178,8 @@ public class ItsShowTime {
 				+ "}.showafter{\r\n"
 				+ "  display:block;\r\n"
 				+ " margin-left:60px;\r\n"
-				+"background-color: white;\r\n"
-				+"cursor:pointer;\r\n"
+				+ "background-color: white;\r\n"
+				+ "cursor:pointer;\r\n"
 				+ "        border-radius: 5px;\r\n"
 				+ "        padding-left: 15px;\r\n"
 				+ "        border: 1px solid #ccc;\r\n"
@@ -189,8 +191,8 @@ public class ItsShowTime {
 				+ " margin-left:60px;\r\n"
 				+ " width: 400px;\r\n"
 				+ " height: 60px;\r\n"
-				+"background-color: white;\r\n"
-				+"cursor:pointer;\r\n"
+				+ "background-color: white;\r\n"
+				+ "cursor:pointer;\r\n"
 				+ "        border-radius: 5px;\r\n"
 				+ "        padding-left: 15px;\r\n"
 				+ "        border: 1px solid #ccc;\r\n"
@@ -200,8 +202,8 @@ public class ItsShowTime {
 				+ ".show{\r\n"
 				+ "  display:block;\r\n"
 				+ " margin-left:20px;\r\n"
-				+"background-color: white;\r\n"
-				+"cursor:pointer;\r\n"
+				+ "background-color: white;\r\n"
+				+ "cursor:pointer;\r\n"
 				+ "        border-radius: 5px;\r\n"
 				+ "        padding-left: 15px;\r\n"
 				+ "        border: 1px solid #ccc;\r\n"
@@ -213,13 +215,19 @@ public class ItsShowTime {
 				+ " margin-left:20px;\r\n"
 				+ " width: 400px;\r\n"
 				+ " height: 60px;\r\n"
-				+"background-color: white;\r\n"
-				+"cursor:pointer;\r\n"
+				+ "background-color: white;\r\n"
+				+ "cursor:pointer;\r\n"
 				+ "        border-radius: 5px;\r\n"
 				+ "        padding-left: 15px;\r\n"
 				+ "        border: 1px solid #ccc;\r\n"
 				+ "        border-bottom-width: 2px;\r\n"
 				+ "color: black;\r\n"
+				+ "}.logo-image{\r\n"
+				+ "    width: 120px;\r\n"
+				+ "    height: 80px;\r\n"
+				+ "    border-radius: 50%;\r\n"
+				+ "    overflow: hidden;\r\n"
+				+ "    margin-top: -6px;\r\n"
 				+ "}"
 				+ "</style> "
 				+ "<body><nav class=\"navbar navbar-expand-lg bg-body-tertiary sticky-top pt-1 pb-1\" data-bs-theme=\"dark\">\r\n"
@@ -231,42 +239,29 @@ public class ItsShowTime {
 				+ "        </button>\r\n"
 				+ "        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\r\n"
 				+ "          <ul class=\"navbar-nav\">\r\n"
-				+"<li class=\"nav-item fs-3 m-2 fw-bold\" id=\"list\">\r\n"
-						+ "              <a class=\"nav-link\" href=\"mainNew.html\">Home</a>\r\n"
-						+ "            </li>\r\n"
-				+ "            <li class=\"nav-item fs-3 m-2 fw-bold\" id=\"list\">\r\n"
-				+ "              <a class=\"nav-link\" href=\"#\">Activities</a>\r\n"
-				+ "            </li>\r\n"
-				+ "            <li class=\"nav-item fs-3 m-2 fw-bold\" id=\"list\">\r\n"
-				+ "              <a class=\"nav-link\" href=\"#Consultation\">Consultation</a>\r\n"
-				+ "            </li>\r\n"
-				+ "            <li class=\"nav-item fs-3 m-2 fw-bold\" id=\"list\">\r\n"
-				+ "              <a class=\"nav-link\" href=\"discussion.html\">Discussion</a>\r\n"
-				+ "            </li>\r\n"
-				+ "            <li class=\"nav-item fs-3 m-2 fw-bold\" id=\"list\">\r\n"
-				+ "              <a class=\"nav-link\" href=\"#\">Contact</a>\r\n"
-				+ "            </li>\r\n"
-				+ "            <li class=\"nav-item position-absolute end-0 fs-3 m-2 fw-bold\" id=\"list\">\r\n"
-				+ "              <a class=\"nav-link\" href=\"#\" id=\"logout\">Logout</a>\r\n"
-				+ "            </li>\r\n"
+				+ "<a class=\"navbar-brand\" href=\"/\">\r\n"
+				+ "      <div class=\"logo-image\">\r\n"
+				+ "<a href=\"mainNew.html\"><img src=\"img.jpeg\" class = \"logo-image\"></a>"
+				+ "      </div>\r\n"
+				+ "</a>"
 				+ "          </ul>\r\n"
 				+ "        </div>\r\n"
 				+ "      </div>\r\n"
 				+ "  </div>\r\n"
 				+ "  </nav> ";
-		String add="";
-		String addown="";
+		String add = "";
+		String addown = "";
 		ArrayList<String> a1 = new ArrayList<String>();
 		ArrayList<String> a2 = new ArrayList<String>();
 		ArrayList<String> a3 = new ArrayList<String>();
-		String st="";
+		String st = "";
 		File f = new File("data.txt");
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(f));
-			
+
 			int i = 0;
 			String s = br.readLine();
-			while((st = br.readLine())!=null) {
+			while ((st = br.readLine()) != null) {
 				a1.add(st);
 				String st1 = br.readLine();
 				a2.add(st1);
@@ -283,73 +278,78 @@ public class ItsShowTime {
 		}
 		int maxlength = a3.size();
 		int n = maxlength;
-		for(int i=0;i<n-1;i++) {
-			for(int j=0;j<n-1-i;j++) {
+		for (int i = 0; i < n - 1; i++) {
+			for (int j = 0; j < n - 1 - i; j++) {
 				long e1 = Long.parseLong(a3.get(j));
-				long e2 = Long.parseLong(a3.get(j+1));
+				long e2 = Long.parseLong(a3.get(j + 1));
 				if (e1 < e2) {
 					String x = a3.get(j);
-					a3.set(j, a3.get(j+1));
-					a3.set(j+1,x);
-					
+					a3.set(j, a3.get(j + 1));
+					a3.set(j + 1, x);
+
 					String y = a2.get(j);
-					a2.set(j, a2.get(j+1));
-					a2.set(j+1,y);
-					
+					a2.set(j, a2.get(j + 1));
+					a2.set(j + 1, y);
+
 					String z = a1.get(j);
-					a1.set(j, a1.get(j+1));
-					a1.set(j+1,z);
+					a1.set(j, a1.get(j + 1));
+					a1.set(j + 1, z);
 				}
 			}
 		}
 		long maxindex = 0;
-		if (a3.size()>0)maxindex=Long.parseLong(a3.get(0)) + 1;
-		for(int i=0;i<n;i++) {
+		if (a3.size() > 0)
+			maxindex = Long.parseLong(a3.get(0)) + 1;
+		for (int i = 0; i < n; i++) {
 			long k = Long.parseLong(a3.get(i));
-			if (i==0 || !(a3.get(i).equals(a3.get(i-1)))) {
-				for(int j=0;j<a2.get(i).length();j+=140) {
-					String print="";
-					if (j+140 <= a2.get(i).length()) {
-						print = a2.get(i).substring(j,j+140);
-					}
-					else {
-						print = a2.get(i).substring(j,a2.get(i).length());
+			if (i == 0 || !(a3.get(i).equals(a3.get(i - 1)))) {
+				for (int j = 0; j < a2.get(i).length(); j += 140) {
+					String print = "";
+					if (j + 140 <= a2.get(i).length()) {
+						print = a2.get(i).substring(j, j + 140);
+					} else {
+						print = a2.get(i).substring(j, a2.get(i).length());
 					}
 					add += "<p>" + print + "</p>";
 				}
-				add += "</p>" +" &emsp; " + "- " + a1.get(i) + "</p>";
-				
-				String y = "onclick= \"" + "onButtonClick" + (i+1) + "()" + "\"/>";
-				String x = "		<input class=\"show12\" type=\"text\"" + "placeholder=\"Reply\"" + "id= \"" + "textInput" + (i+1) + "\"/>";
+				add += "</p>" + " &emsp; " + "- " + a1.get(i) + "</p>";
+
+				String y = "onclick= \"" + "onButtonClick" + (i + 1) + "()" + "\"/>";
+				String x = "		<input class=\"show12\" type=\"text\"" + "placeholder=\"Reply\"" + "id= \""
+						+ "textInput" + (i + 1) + "\"/>";
 				add += x;
-				String z = "		<input class=\"show\" type=\"text\"" + "placeholder=\"Your Name\"" + "id= \"" + "textInputd" + (i+1) + "\"/>";
+				String z = "		<input class=\"show\" type=\"text\"" + "placeholder=\"Your Name\"" + "id= \""
+						+ "textInputd" + (i + 1) + "\"/>";
 				add += z;
-				String p = "<button id = \"" + "text" + k + "InputButton" + (i+1) + "\" " +  "class = \"show\" onclick = \"onButtonClick" + (i+1) + "(this.id)\">Post Reply</button>";
+				String p = "<button id = \"" + "text" + k + "InputButton" + (i + 1) + "\" "
+						+ "class = \"show\" onclick = \"onButtonClick" + (i + 1) + "(this.id)\">Post Reply</button>";
 				add += p;
 				add += "<br>";
-			}
-			else if (a3.get(i).equals(a3.get(i-1))) {
-				for(int j=0;j<a2.get(i).length();j+=140) {
-					String print="";
-					if (j+140 <= a2.get(i).length()) {
-						print = a2.get(i).substring(j,j+140);
+			} else if (a3.get(i).equals(a3.get(i - 1))) {
+				for (int j = 0; j < a2.get(i).length(); j += 140) {
+					String print = "";
+					if (j + 140 <= a2.get(i).length()) {
+						print = a2.get(i).substring(j, j + 140);
+					} else {
+						print = a2.get(i).substring(j, a2.get(i).length());
 					}
-					else {
-						print = a2.get(i).substring(j,a2.get(i).length());
-					}
-					add += "<p>"+" &emsp;&emsp;&emsp;&emsp; " + print + "</p>";
+					add += "<p>" + " &emsp;&emsp;&emsp;&emsp; " + print + "</p>";
 				}
-				add += "</p>" +" &emsp;&emsp;&emsp;&emsp;&emsp; " + "- " + a1.get(i) + "</p>";
-				String x = "		<input class=\"showafter12\" type=\"text\"" + "placeholder=\"Reply\"" + "id= \"" + "textInput" + (i+1) + "\"/>";
+				add += "</p>" + " &emsp;&emsp;&emsp;&emsp;&emsp; " + "- " + a1.get(i) + "</p>";
+				String x = "		<input class=\"showafter12\" type=\"text\"" + "placeholder=\"Reply\"" + "id= \""
+						+ "textInput" + (i + 1) + "\"/>";
 				add += x;
-				String z = "		<input class=\"showafter\" type=\"text\"" + "placeholder=\"Your Name\"" + "id= \"" + "textInputd" + (i+1) + "\"/>";
+				String z = "		<input class=\"showafter\" type=\"text\"" + "placeholder=\"Your Name\"" + "id= \""
+						+ "textInputd" + (i + 1) + "\"/>";
 				add += z;
-				String p = "<button id = \"" + "text" + k + "InputButton" + (i+1) + "\" " +  "class = \"showafter\" onclick = \"onButtonClick" + (i+1) + "(this.id)\">Post Reply</button>";
+				String p = "<button id = \"" + "text" + k + "InputButton" + (i + 1) + "\" "
+						+ "class = \"showafter\" onclick = \"onButtonClick" + (i + 1)
+						+ "(this.id)\">Post Reply</button>";
 				add += p;
 				add += "<br>";
 			}
 		}
-		
+
 		add += "<br>";
 		addown = "  <div class=\"container text-center\" style=\"display:inline-block;\"><div class=\"content\">\r\n"
 				+ "      <form action=\"#\">\r\n"
@@ -360,11 +360,11 @@ public class ItsShowTime {
 				+ "          </div>\r\n"
 				+ "        </div>\r\n" +
 				"<div class=\"user\">\r\n"
-						+ "          <div class=\"input-box\">\r\n"
-						+ "            <span class=\"details\"></span>\r\n"
-						+ "            <input type=\"text\" placeholder=\"Your name\" required name=\"name\" id=\"id\">\r\n"
-						+ "          </div>\r\n"
-						+ "        </div>\r\n"
+				+ "          <div class=\"input-box\">\r\n"
+				+ "            <span class=\"details\"></span>\r\n"
+				+ "            <input type=\"text\" placeholder=\"Your name\" required name=\"name\" id=\"id\">\r\n"
+				+ "          </div>\r\n"
+				+ "        </div>\r\n"
 				+ "</form>\r\n"
 				+ "</div>  <div class=\"part\">\r\n"
 				+ "                      <div class=\"buttonn\">\r\n"
@@ -372,7 +372,7 @@ public class ItsShowTime {
 				+ "                      </div>\r\n"
 				+ "                    </div>"
 				+ "</div>" + "</body>";
-		
+
 		String end = "</head></html>";
 		String link = "var z = \"http://localhost:51234/add\" + \"/\" + y + \"/\" + x + \"/\" + " + maxindex + ";\r\n";
 		String l = "  function myFunction() {\r\n"
@@ -384,20 +384,22 @@ public class ItsShowTime {
 				+ "          window.location = z;\r\n"
 				+ "        }\r\n\r\n";
 		String p = "";
-		for(int i=0;i<n;i++) {
-			String functionname = "onButtonClick" + (i+1) + "(id)";
-			String id1 = "textInput" + (i+1);
-			String id2 = "textInputd" + (i+1);
-			p+= "function " + functionname + "{\r\n"  
-					+ "	  var p = id.substring(4,5);\r\n" + "var x = document.getElementById('" + id1 + "').value;\r\n" + "var y = document.getElementById('" + id2 + "').value;\r\n" + "var z = \"http://localhost:51234/add" + "/\" + x + \"/\" + y + \"/\" + p;\r\n"
-							+ "	  window.close();\r\n"
-							+ "	  window.location = z;\r\n"
-							+  "}\r\n\r\n";
+		for (int i = 0; i < n; i++) {
+			String functionname = "onButtonClick" + (i + 1) + "(id)";
+			String id1 = "textInput" + (i + 1);
+			String id2 = "textInputd" + (i + 1);
+			p += "function " + functionname + "{\r\n"
+					+ "	  var p = id.substring(4,5);\r\n" + "var x = document.getElementById('" + id1 + "').value;\r\n"
+					+ "var y = document.getElementById('" + id2 + "').value;\r\n"
+					+ "var z = \"http://localhost:51234/add" + "/\" + x + \"/\" + y + \"/\" + p;\r\n"
+					+ "	  window.close();\r\n"
+					+ "	  window.location = z;\r\n"
+					+ "}\r\n\r\n";
 		}
-		
-		String script="<script>\r\n" + l + p
+
+		String script = "<script>\r\n" + l + p
 				+ "</script>";
-		html+= add + addown + script + end;
+		html += add + addown + script + end;
 		return html;
 	}
 }
