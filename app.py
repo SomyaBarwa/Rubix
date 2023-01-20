@@ -112,7 +112,7 @@ def register():
 @login_required
 @app.route("/index")
 def ind():
-    return render_template("index.html")
+    return render_template("index")
 
 
 
